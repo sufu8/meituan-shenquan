@@ -12,7 +12,7 @@ import datetime
 
 #定义11点  用于开启server 酱推送
 global d_time0,d_time1,d_time2,n_time
-d_time0 = datetime.datetime.strptime(str(datetime.datetime.now().date()) + '11:00', '%Y-%m-%d%H:%M')
+d_time0 = datetime.datetime.strptime(str(datetime.datetime.now().date()) + '09:00', '%Y-%m-%d%H:%M')
 
 
 n_time = datetime.datetime.now()
@@ -20,13 +20,13 @@ n_time = datetime.datetime.now()
 
 #定义抢大额红包时间段d_time3和d_time4和d_time5和d_time6之间 ，d_time4提前11分钟意在防止下午红包池提前10分钟关闭和脚本抢大额红包有些地区到最后一刻10元以上红包都有剩余导致脚本报错，
 # 若到最后一刻会自动放弃监测，抢所拥有的必中符的面值保底
-###默认 抢大额(15元以上) 时间段为下午17:00点到16:49分和晚上21:00到23点59分   不建议进行更改
+###默认 抢大额(15元以上) 时间段为下午13:00点到17:49分和晚上21:00到23点59分   不建议进行更改
 ##以下默认中午试图抢大额红包 前提是道具库存中有10元以上必中符！！！！！！！！！
 
 global d_time3,d_time4,d_time5,d_time6
 
-d_time3 = datetime.datetime.strptime(str(datetime.datetime.now().date()) + '17:00', '%Y-%m-%d%H:%M')
-d_time4 = datetime.datetime.strptime(str(datetime.datetime.now().date()) + '20:49', '%Y-%m-%d%H:%M')
+d_time3 = datetime.datetime.strptime(str(datetime.datetime.now().date()) + '13:00', '%Y-%m-%d%H:%M')
+d_time4 = datetime.datetime.strptime(str(datetime.datetime.now().date()) + '17:49', '%Y-%m-%d%H:%M')
 
 d_time5 = datetime.datetime.strptime(str(datetime.datetime.now().date()) + '21:00', '%Y-%m-%d%H:%M')
 d_time6 = datetime.datetime.strptime(str(datetime.datetime.now().date()) + '23:59', '%Y-%m-%d%H:%M')
